@@ -329,10 +329,12 @@ function showCardsOnScroll() {
     if(cardTop < triggerBottom){
       card.classList.add('show');
       card.style.transitionDelay = `${index * 0.2}s`;
+      
     }
   });
 }
 
 window.addEventListener('scroll', showCardsOnScroll);
 window.addEventListener('load', showCardsOnScroll);
+  cards.forEach(card => { card.style.opacity = "1"; card.style.transform = "none"; });
 </script>
