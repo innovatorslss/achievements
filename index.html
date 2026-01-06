@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Celebrate with the Innovators Club of Luzira Secondary School. Explore milestones, achievements, and student innovations. Join our WhatsApp channel to connect.">
+<meta name="keywords" content="Innovators Club, Luzira Secondary School, student projects, achievements, innovation, coding, science, awards">
+<meta name="author" content="Akampumuza Belay">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Innovators Club Achievements - Luzira Secondary School",
+  "description": "Explore the achievements and milestones of the Innovators Club at Luzira Secondary School, highlighting awards, student projects, and contributions.",
+  "url": "https://innovatorslss.github.io/achievements/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Innovators Club - Luzira Secondary School",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://innovatorslss.github.io/history/innovators.png"
+    },
+    "sameAs": [
+      "https://whatsapp.com/channel/0029VbBk2Bb7T8bgszT6VC0x"
+    ]
+  },
+  "mainEntity": [
+    {
+      "@type": "Achievement",
+      "name": "First Award",
+      "description": "The club members excelled in UNSO competitions.",
+      "image": "https://innovatorslss.github.io/history/UNSO2.jpg"
+    },
+    {
+      "@type": "Achievement",
+      "name": "Top Innovators",
+      "description": "Recognition in code mastery.",
+      "image": "https://innovatorslss.github.io/gallery/executive.jpg"
+    },
+    {
+      "@type": "Achievement",
+      "name": "Projects Launched",
+      "description": "Science and coding projects developed by the club.",
+      "image": "https://innovatorslss.github.io/gallery/code.jpg"
+    },
+
+    {
+      "@type": "Achievement",
+      "name": "Special Thanks",
+      "description": "Our Club patron, Mrs. Nakyeyune Esther, for her guidance and support.",
+      "image": "https://innovatorslss.github.io/gallery/Esther.jpg"
+    }
+  ]
+}
+</script>
+<title>Innovators Club Achievements - Luzira Secondary School</title>
+
+<style>
+/* ===== GLOBAL ===== */
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family: Arial, Helvetica, sans-serif; background:#f4f6fb; overflow-x:hidden; }
+a { text-decoration:none; color:inherit; }
+body {
+  background: linear-gradient(135deg, white, lavender);
+}
+
+/* ===== TOP BAR ===== */
+.top-bar {
+  position: fixed; top:8px; left:0; right:0; height:60px; background:white;
+  display:flex; align-items:center; justify-content:center; padding:0 18px;
+  border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.08); z-index:1000;
+}
+.top-bar img.logo { height:36px; position:absolute; left:18px; }
+.club-name { position:absolute; left:50%; transform:translateX(-50%); font-weight:700; font-size:1.2rem; color:#4f46e5; white-space:nowrap; }
+.menu-btn { position:absolute; right:18px; font-size:1.8rem; cursor:pointer; color:#4f46e5; }
+.dropdown {
+  display:none; position:absolute; top:60px; right:18px; background:white;
+  border-radius:8px; box-shadow:0 8px 20px rgba(0,0,0,0.2); min-width:160px; z-index:1001;
+}
+.dropdown a { display:block; padding:10px 15px; color:#4f46e5; }
+.dropdown a.contact-link { background-color:#25D366; color:white; margin:5px 10px; border-radius:5px; text-align:center; }
+.dropdown a:hover { background:#f0f0f0; }
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(120deg, #1E90FF, #800080, #FF0000);
+  background-size: 600% 600%;
+  animation: gradientShift 15s ease infinite;
+  color:white;
+  text-align:center;
+  padding:120px 20px 60px;
+  position:relative;
+  overflow:hidden;
+  min-height:50vh;
+}
+@keyframes gradientShift {
+  0%{background-position:0% 50%;}
+  33%{background-position:50% 50%;}
+  66%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+.hero-welcome { font-size:1.4rem; margin-bottom:12px; opacity:0; animation:fromTop 0.8s ease forwards; }
+.hero-title { font-size:3rem; font-weight:700; color:white; opacity:0; animation:fromLeft 1s ease forwards; animation-delay:0.5s; }
+.hero-sub { font-size:2rem; color:white; opacity:0; animation:fromLeft 1s ease forwards; animation-delay:1.5s; }
+.glow { text-shadow: 0 0 8px #fff, 0 0 16px #00f, 0 0 24px #800080, 0 0 32px #FF0000; }
+
+/* Floating emojis */
+.emoji-container { position:absolute; font-size:2rem; animation: floatAround 8s ease-in-out infinite alternate; pointer-events:none; text-shadow: 0 0 6px #fff, 0 0 12px #ff0; }
+.layer1 { z-index:1; font-size:1.8rem; opacity:0.8; animation-duration:7s; }
+.layer2 { z-index:2; font-size:2rem; opacity:0.9; animation-duration:9s; }
+.layer3 { z-index:3; font-size:2.3rem; opacity:1; animation-duration:6s; }
+@keyframes floatAround {
+  0% { transform: translate(0px, 0px) rotate(0deg);}
+  25% { transform: translate(15px, -10px) rotate(5deg);}
+  50% { transform: translate(-10px, 15px) rotate(-5deg);}
+  75% { transform: translate(10px, 10px) rotate(3deg);}
+  100% { transform: translate(0px, 0px) rotate(0deg);}
+}
+@keyframes fromTop { from { transform:translateY(-50px); opacity:0; } to { transform:translateY(0); opacity:1; } }
+@keyframes fromLeft { from { transform:translateX(-50px); opacity:0; } to { transform:translateX(0); opacity:1; } }
+
+/* ===== INFO SECTION ===== */
+.info-section { display:flex; flex-direction:column; align-items:center; max-width:800px; margin:30px auto; gap:20px; }
+.info-card { width:100%; padding:16px 20px; box-shadow:0 8px 24px rgba(0,0,0,0.15); color:white; font-weight:500; }
+.info-card.one { border-radius:20px 5px 20px 5px; background: linear-gradient(135deg,#FF0000,#1E90FF,#800080);}
+.info-card.two { border-radius:5px 20px 5px 20px; background: linear-gradient(135deg,#800080,#1E90FF,#FF0000); }
+
+/* WhatsApp button */
+#whatsapp-btn { margin:0 auto; background:#25D366; color:white; border:none; padding:12px 24px; font-weight:700; border-radius:30px; cursor:pointer; font-size:1rem; display:block; transition:0.3s ease; }
+#whatsapp-btn:hover { background:#1ebe57; }
+
+/* ===== CARDS GRID ===== */
+.cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; padding:16px; max-width:1100px; margin:auto; }
+.history-card, .exec-card, .thanks-card {
+  background:white; border-radius:16px; padding:16px;border-radius:16px; padding:16px;  text-align:center;
+  transition:transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease; opacity:0; transform:translateX(-50px);
+  box-shadow:0 12px 28px rgba(0,0,0,0.15);
+}
+.history-card {
+  border-top: 6px solid #FF0000;   /* red */
+  border-left: 6px solid #9333ea;  /* purple */
+}
+.history-card.show, .exec-card.show, .thanks-card.show { opacity:1; transform:translateX(0); }
+.history-card:hover, .exec-card:hover, .thanks-card:hover { transform:translateY(-8px); box-shadow:0 18px 35px rgba(0,0,0,0.25); }
+.card-emoji{font-size:2rem; display:block; margin-bottom:10px;}
+.history-card h3, .exec-card h3, .thanks-card h3{color:#4f46e5;margin:8px 0;font-size:1.1rem;}
+.history-card p, .exec-card p, .thanks-card p{font-size:0.95rem;color:#333;line-height:1.5;}
+
+/* Special Thanks card float */
+.thanks-card { background:lavender; border-top:7px solid blue; border-left:7px solid red; animation: floatUpDown 3s ease-in-out infinite alternate; }
+@keyframes floatUpDown { 0%{transform:translateY(0);} 100%{transform:translateY(-12px);} }
+
+/* ===== FOOTER ===== */
+footer{background:#111;color:white;text-align:center;padding:60px 20px; margin-top:40px;}
+footer img.logo-footer{width:60px; margin-bottom:12px;}
+footer a{color:white;text-decoration:none;}
+footer .footer-links {margin-top:20px; display:flex; justify-content:center; gap:15px; flex-wrap:wrap;}
+footer .footer-links a{padding:8px 16px; background:#4f46e5; border-radius:20px; transition:0.3s ease;}
+footer .footer-links a:hover{background:#9333ea;}
+footer .footer-email {margin-top:16px; font-weight:600;}
+
+/* MEDIA */
+@media(max-width:480px){.hero-title{font-size:2rem;}.hero-sub{font-size:1.4rem;}.info-card p{font-size:0.9rem;}}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<header class="top-bar">
+  <img src="images/innovators.png" class="logo" alt="Logo">
+  <div class="club-name">Innovators Club</div>
+  <div class="menu-btn" id="menu-btn">☰</div>
+  <div class="dropdown" id="dropdown">
+    <a href="https://whatsapp.com/channel/0029VbBk2Bb7T8bgszT6VC0x">Join Us</a>
+    <a href="https://innovatorslss.github.io/gallery/">Gallery</a>
+    <a href="index.html">Main</a>
+    <a href="mailto:innovatorslss@gmail.com" class="contact-link">Contact Us</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <p class="hero-welcome">Welcome to</p>
+  <h1 class="hero-title glow" id="hero-title">INNOVATORS CLUB</h1>
+  <h2 class="hero-sub glow" id="hero-sub">Achievements Web</h2>
+
+  <!-- Floating emojis -->
+  <div class="emoji-container layer1" style="top:15%; left:10%;">🚀</div>
+  <div class="emoji-container layer2" style="top:20%; right:15%;">🏅</div>
+  <div class="emoji-container layer3" style="bottom:10%; left:30%;">🎯</div>
+</section>
+
+<!-- INFO SECTION WITH BUTTON -->
+<section class="info-section">
+  <div class="info-card one">
+    <p id="info-1"></p>
+  </div>
+
+  <button id="whatsapp-btn">Join our WhatsApp Channel</button>
+
+  <div class="info-card two">
+    <p id="info-2"></p>
+  </div>
+</section>
+
+<!-- ACHIEVEMENT CARDS -->
+<section class="cards">
+  <div class="thanks-card">
+    <span class="card-emoji">👑</span>
+    <h3>Special Thanks</h3>
+        <p>Our Club patron, <strong>Mrs. Nakyeyune Esther</strong>, for her guidance and support. You are the reason behind this masterpiece.</p>
+        <br>
+        <p>Our Club President <strong>Sir. Akampumuza Belay</strong> for the sacrifice and time he gave to these amazing websites.</p>
+  </div>
+  <div class="history-card">
+    <span class="card-emoji">🏅</span>
+    <h3>First Award</h3>
+    <p>The competition between schools on a big science test of communication and team work, and equipping with technology skills, was a source of our first award. The UNSO.</p>
+  </div>
+  <div class="history-card">
+    <span class="card-emoji">🏆</span>
+    <h3>Learning and Application.</h3>
+    <p>The tours of our science immagination were a big success, with increasing social capacity and scientific ideas. The STEM Boot Camp and the FT sesaions.</p>
+  </div>
+  <div class="history-card">
+    <span class="card-emoji">💡</span>
+    <h3>Project Launched</h3>
+    <p>The foundation of HTML rose tk the beginning of the first ever club website in Luzira Secondary School.</p>
+  </div>
+  <div class="history-card">
+    <span class="card-emoji">🌍</span>
+    <h3>We are famous.</h3>
+    <p>Launching our first ever club whatsapp channel for the public to celebrate with us our achievements and to join us in our various projects.</p>
+  
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <img src="images/innovators.png" class="logo-footer" alt="Logo">
+  <div class="footer-links">
+    <a href="https://innovatorslss.github.io/main/">Main</a>
+    <a href="https://innovatorslss.github.io/projects/">Projects</a>
+    <a href="https://innovatorslss.github.io/history/">History</a>
+    <a href="https://innovatorslss.github.io/gallery/">Gallery</a>
+  </div>
+  <div class="footer-email">📩 <a href="mailto:innovatorslss@gmail.com">innovatorslss@gmail.com</a></div>
+  <p style="margin-top:16px;">© Innovators Club 2026</p>
+  <img src="images/badge.jpeg" class="logo-footer" alt="badge">
+  <p style="margin-top:16px">SRC.@Akampumuza Belay <br> #Club President.</p>
+</footer>
+<script>
+// ===== HERO SELF-TYPING =====
+const heroTitle = document.getElementById("hero-title");
+const heroSub = document.getElementById("hero-sub");
+const heroText = heroTitle.textContent;
+const subText = heroSub.textContent;
+heroTitle.textContent = "";
+heroSub.textContent = "";
+let i=0, j=0;
+
+function typeHero() {
+  if(i < heroText.length){
+    heroTitle.textContent += heroText.charAt(i);
+    i++;
+    setTimeout(typeHero, 80);
+  }
+}
+function typeSub() {
+  if(j < subText.length){
+    heroSub.textContent += subText.charAt(j);
+    j++;
+    setTimeout(typeSub, 80);
+  }
+}
+typeHero();
+setTimeout(typeSub, 400);
+
+// ===== INFO CARDS SELF-TYPING =====
+const info1 = "Celebrate with the Innovators Club of Luzira Secondary School as we look at the milestones that have led to today.";
+const info2 = "The rewards go to those who not just work hard, but work smart. The results of resilience and teamwork.";
+let k=0, l=0;
+const infoEl1 = document.getElementById("info-1"); 
+const infoEl2 = document.getElementById("info-2");
+
+function typeInfo1() {
+  if(k < info1.length){
+    infoEl1.textContent += info1.charAt(k);
+    k++;
+    setTimeout(typeInfo1, 40);
+  }
+}
+function typeInfo2() {
+  if(l < info2.length){
+    infoEl2.textContent += info2.charAt(l);
+    l++;
+    setTimeout(typeInfo2, 40);
+  }
+}
+typeInfo1();
+setTimeout(typeInfo2, 500);
+
+// ===== WHATSAPP BUTTON =====
+const whatsappBtn = document.getElementById('whatsapp-btn');
+whatsappBtn.addEventListener('click', () => {
+  window.open('https://whatsapp.com/channel/0029VbBk2Bb7T8bgszT6VC0x', '_blank');
+});
+
+// ===== HAMBURGER MENU =====
+const menuBtn = document.getElementById('menu-btn');
+const dropdown = document.getElementById('dropdown');
+
+menuBtn.addEventListener('click', () => {
+  dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+});
+
+window.addEventListener('click', (e) => {
+  if(!menuBtn.contains(e.target) && !dropdown.contains(e.target)) {
+    dropdown.style.display = 'none';
+  }
+});
+
+// ===== SCROLL REVEAL FOR CARDS =====
+const cards = document.querySelectorAll('.history-card, .thanks-card');
+
+function showCardsOnScroll() {
+  const triggerBottom = window.innerHeight * 0.85;
+  cards.forEach((card, index) => {
+    const cardTop = card.getBoundingClientRect().top;
+    if(cardTop < triggerBottom){
+      card.classList.add('show');
+      card.style.transitionDelay = `${index * 0.2}s`;
+    }
+  });
+}
+
+window.addEventListener('scroll', showCardsOnScroll);
+window.addEventListener('load', showCardsOnScroll);
+</script>
